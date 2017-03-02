@@ -1,0 +1,52 @@
+<!--
+  Generated template for the Welcome page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+
+
+</ion-header>
+
+
+<ion-content>
+  <ion-slides #welcomeSlider [options]="mySlideOptions">
+
+    <ion-slide>
+      <h2>Welcome to MyHealthyLife</h2>
+      <img src="../../assets/images/smiling-doctor-med.jpg">
+      <h4>Let's get you set up!</h4>
+      <ion-list>
+        <ion-item></ion-item>
+        <ion-item>
+          <ion-input type="text" placeholder="Just enter your Patient ID here and swipe right"></ion-input>
+        </ion-item>
+
+      </ion-list>
+    </ion-slide>
+
+
+
+    <ion-slide>
+      <h2>Choose/verify your personal health alerts</h2>
+      <ion-list>
+        <ion-item>
+          <ion-label>Asthma</ion-label>
+          <ion-checkbox color="light" checked="true"></ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-label>Migraines</ion-label>
+          <ion-checkbox color="light" checked="false"></ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-label>Joint Pain</ion-label>
+          <ion-checkbox color="light" checked="false"></ion-checkbox>
+        </ion-item>
+      </ion-list>
+      <button ion-button round (click)=goToHome()>All Done!</button>
+    </ion-slide>
+
+  </ion-slides>
+</ion-content>
